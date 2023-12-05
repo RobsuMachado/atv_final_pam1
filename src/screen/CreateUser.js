@@ -3,7 +3,8 @@ import { Alert, Image, SafeAreaView, ScrollView, StyleSheet, Text, TextInput, To
 import MaterialIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 import styles from '../styles/styles';
 
-export default function Login() {
+
+export default function CreateUser() {
     const navigation = useNavigation();
     return (
         <SafeAreaView style={styles.container}>
@@ -12,12 +13,12 @@ export default function Login() {
                 <View style={styles.containerLogo}>
                     <Image
                         style={styles.logoImage}
-                    // source={require('../image/login.png')}
+                        // source={require('../image/registration.png')}
                     />
                 </View>
 
                 <View style={styles.containerTitle}>
-                    <Text style={styles.title}>FAÇA LOGIN</Text>
+                    <Text style={styles.title}>CADASTRE-SE</Text>
                     <Text style={styles.title}>NA MAIOR</Text>
                     <Text style={styles.title}>LOJA DE JOGOS</Text>
                 </View>
@@ -29,9 +30,9 @@ export default function Login() {
                             style={styles.textImput}
                             placeholderTextColor='#999'
                             placeholder='E-mail'
-                            keyboardType='email-address'
-                        />
+                            keyboardType='email-address' />
                     </View>
+
                     <View style={{margin: 5}}></View>
 
                     <View style={styles.imput}>
@@ -43,26 +44,33 @@ export default function Login() {
                             keyboardType='password'
                             secureTextEntry={true} />
                     </View>
-                </View>
 
+                    <View style={{margin: 5}}></View>
+
+                    <View style={styles.imput}>
+                        <MaterialIcons name='lock-alert' size={20} color={'#999'} />
+                        <TextInput
+                            style={styles.textImput}
+                            placeholder='Confimar Senha'
+                            placeholderTextColor='#999'
+                            keyboardType='password'
+                            secureTextEntry={true} />
+                    </View>
+                </View>
 
                 <TouchableOpacity>
                     <Text
-                        style={styles.button}
-                        onPress={() => {
-                            // navigation.navigate('FeedBook');
-                            navigation.navigate('DrawerMenu');
-                        }}>
-                        LOGIN
+                        style={styles.button}>
+                        CADASTRO
                     </Text>
                 </TouchableOpacity>
 
                 <View style={styles.containerAcessWith}>
-                    <View style={styles.detailAcessWith} />
+                    <View style={styles.detailAcessWith}/>
                     <Text style={styles.acessWith}>
                         ACESSAR COM OUTRAS REDES
                     </Text>
-                    <View style={styles.detailAcessWith} />
+                    <View style={styles.detailAcessWith}/>
                 </View>
 
                 <View style={styles.containerAcessWithIcon}>
@@ -81,19 +89,20 @@ export default function Login() {
 
                 <View style={styles.containerCreateAccont}>
                     <Text style={styles.labelCreateAccont}>
-                        Não possue uma conta?
+                        Já possue uma conta?
                     </Text>
                     <TouchableOpacity
                         onPress={() => {
-                            navigation.navigate('CreateUser');
+                            navigation.navigate('Login');
                         }}
                     >
                         <Text style={styles.labelNavigate}>
-                            CRIE UMA
+                            ENTRAR
                         </Text>
                     </TouchableOpacity>
                 </View>
             </ScrollView>
+
         </SafeAreaView >
     );
 }
