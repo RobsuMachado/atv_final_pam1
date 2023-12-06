@@ -13,7 +13,7 @@ export default function CreateUser() {
                 <View style={styles.containerLogo}>
                     <Image
                         style={styles.logoImage}
-                        // source={require('../image/registration.png')}
+                    // source={require('../image/registration.png')}
                     />
                 </View>
 
@@ -33,7 +33,7 @@ export default function CreateUser() {
                             keyboardType='email-address' />
                     </View>
 
-                    <View style={{margin: 5}}></View>
+                    <View style={{ margin: 5 }}></View>
 
                     <View style={styles.imput}>
                         <MaterialIcons name='lock' size={20} color={'#999'} />
@@ -45,7 +45,7 @@ export default function CreateUser() {
                             secureTextEntry={true} />
                     </View>
 
-                    <View style={{margin: 5}}></View>
+                    <View style={{ margin: 5 }}></View>
 
                     <View style={styles.imput}>
                         <MaterialIcons name='lock-alert' size={20} color={'#999'} />
@@ -60,17 +60,20 @@ export default function CreateUser() {
 
                 <TouchableOpacity>
                     <Text
+                        onPress={() => {
+                            navigation.navigate('FeedBook');
+                        }}
                         style={styles.button}>
                         CADASTRO
                     </Text>
                 </TouchableOpacity>
 
                 <View style={styles.containerAcessWith}>
-                    <View style={styles.detailAcessWith}/>
+                    <View style={styles.detailAcessWith} />
                     <Text style={styles.acessWith}>
                         ACESSAR COM OUTRAS REDES
                     </Text>
-                    <View style={styles.detailAcessWith}/>
+                    <View style={styles.detailAcessWith} />
                 </View>
 
                 <View style={styles.containerAcessWithIcon}>
