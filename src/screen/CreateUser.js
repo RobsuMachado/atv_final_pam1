@@ -13,7 +13,7 @@ export default function CreateUser() {
                 <View style={styles.containerLogo}>
                     <Image
                         style={styles.logoImage}
-                    // source={require('../image/registration.png')}
+                    source={require('../image/GAMERlogo.png')}
                     />
                 </View>
 
@@ -61,7 +61,7 @@ export default function CreateUser() {
                 <TouchableOpacity>
                     <Text
                         onPress={() => {
-                            navigation.navigate('FeedBook');
+                            navigation.navigate('DrawerMenu');
                         }}
                         style={styles.button}>
                         CADASTRO

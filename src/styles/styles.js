@@ -10,9 +10,8 @@ const styles = StyleSheet.create({
         alignItems: 'center',
     },
     logoImage: {
-        width: 130,
+        width: 200,
         height: 40,
-        backgroundColor: '#FF7305',
     },
 
     containerTitle: {

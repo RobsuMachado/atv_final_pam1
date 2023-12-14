@@ -18,7 +18,7 @@ export default function Categorie({ categoria, idade}) {
                         <Text
                             style={styles.buttonCategorieBook}
                             onPress={() => {
-                                navigation.navigate('FeedBook');
+                                navigation.navigate('FeedGames');
                             }}>
                             Lista de Jogos
                         </Text>

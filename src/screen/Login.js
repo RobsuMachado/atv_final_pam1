@@ -12,7 +12,7 @@ export default function Login() {
                 <View style={styles.containerLogo}>
                     <Image
                         style={styles.logoImage}
-                    // source={require('../image/login.png')}
+                    source={require('../image/GAMERlogo.png')}
                     />
                 </View>
 
@@ -50,7 +50,6 @@ export default function Login() {
                     <Text
                         style={styles.button}
                         onPress={() => {
-                            // navigation.navigate('FeedBook');
                             navigation.navigate('DrawerMenu');
                         }}>
                         LOGIN

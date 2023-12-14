@@ -42,15 +42,6 @@ export default function App() {
           }}
         />
 
-        <Stack.Screen
-          name="FeedGames"
-          component={FeedGames}
-          options={{
-            title: "FeedGames",
-            // headerShown: false
-          }}
-        />
-
       </Stack.Navigator>
     </NavigationContainer>
   )
