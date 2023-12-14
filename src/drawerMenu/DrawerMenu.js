@@ -1,9 +1,9 @@
 import { StyleSheet } from 'react-native';
-import Drawer from "../components/Drawer"
+import MyDrawer from '../components/MyDrawer';
 
 export default function DrawerMenu() {
     return (
-        <Drawer/>
+        <MyDrawer/>
     );
 }
 

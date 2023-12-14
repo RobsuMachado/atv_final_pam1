@@ -3,8 +3,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 
 import Login from "./src/screen/Login";
 import CreateUser from "./src/screen/CreateUser";
-import FeedBook from "./src/screen/FeedBook";
-import DrawerMenu from "../src/drawerMenu/DrawerMenu";
+import FeedGames from "./src/screen/FeedGames";
+import DrawerMenu from "./src/drawerMenu/DrawerMenu";
 
 
 const Stack = createNativeStackNavigator();
@@ -43,10 +43,10 @@ export default function App() {
         />
 
         <Stack.Screen
-          name="FeedBook"
-          component={FeedBook}
+          name="FeedGames"
+          component={FeedGames}
           options={{
-            title: "FeedBook",
+            title: "FeedGames",
             // headerShown: false
           }}
         />

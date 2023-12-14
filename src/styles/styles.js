@@ -111,6 +111,16 @@ const styles = StyleSheet.create({
         marginRight: 10,
     },
 
+    //Home Styles
+    containerHome: {
+        flex: 1,
+        backgroundColor: '#f1f1f1',
+        alignItems: 'center',
+        justifyContent: 'center',
+        marginBottom: 100
+
+    },
+
 
 
     //FeedBook Styles
@@ -196,7 +206,6 @@ const styles = StyleSheet.create({
 
     containerButtonDetailsBook: {
         flexDirection: 'row',
-        // backgroundColor: 'pink',
         alignItems:'center',
         marginTop: 15,
     },
@@ -213,7 +222,6 @@ const styles = StyleSheet.create({
         backgroundColor: '#FF7305',
         borderBottomLeftRadius: 10,
         borderTopLeftRadius: 10,
-        // marginVertical: '9%',
         shadowColor: '#333',
         shadowOffset: {
             width: 0,
@@ -235,7 +243,53 @@ const styles = StyleSheet.create({
         backgroundColor: '#fefefe',
         borderBottomRightRadius: 10,
         borderTopRightRadius: 10,
-        // marginVertical: '9%',
+        shadowColor: '#333',
+        shadowOffset: {
+            width: 10,
+            height: 2
+        },
+        shadowOpacity: 1,
+        shadowRadius: 0,
+        elevation: 10,
+    },
+
+
+
+    // Categorie Styles     
+
+    containerCategorie: {
+        alignItems: 'center',
+        width: '100%',
+        height: 125,
+        borderRadius: 20,
+        backgroundColor: '#fff',
+        shadowColor: '#333',
+        shadowOffset: {
+            width: 0,
+            height: 2
+        },
+        shadowOpacity: 1,
+        shadowRadius: 0,
+        elevation: 10,
+        marginBottom: 20,
+    },
+
+    containerButtonCategorieBook: {
+        flexDirection: 'row',
+        alignItems:'center',
+        marginTop: 15,
+    },
+
+    buttonCategorieBook: {
+        fontSize: 16,
+        width: '100%',
+        fontWeight: '800',
+        color: '#fefefe',
+        paddingHorizontal: '30%',
+        paddingVertical: '3%',
+        textAlign: 'center',
+        backgroundColor: '#ff7305',
+        borderRadius: 10,
         shadowColor: '#333',
         shadowOffset: {
             width: 10,
